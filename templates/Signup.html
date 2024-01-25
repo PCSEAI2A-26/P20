@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <section>
+        <div class="signin">
+            <div class="content">
+                <h2>Sign Up</h2>
+                <div class="form">
+                    <form action="/register" method="post">
+                        <div class="inputBox" style="width: 120px;">
+                            <input type="text" name="username" required />
+                            <label for="username">Username</label>
+                        </div>
+                        <div class="inputBox" style="width: 120px;">
+                            <input type="password" name="password" required />
+                            <label for="password">Password</label>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" value="Sign Up" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
